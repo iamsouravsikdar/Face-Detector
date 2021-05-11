@@ -15,7 +15,7 @@ face_coordinates = trained_face_data.detectMultiScale(grayscaled_img)
 
 # Creating Reactangle
 for (x,y,w,h) in face_coordinates:
-    img = cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),2)
+    img = cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),1)
 
 cv2.imshow('Face Detector',img)
 cv2.waitKey()
